@@ -1,0 +1,8 @@
+<mat-toolbar>
+    Event App
+    <span style="flex: 1 1 auto"></span>
+    <a mat-button color="primary" routerLink="add-event">Add Event</a>
+</mat-toolbar>
+<div *ngFor="let event of appService.events">
+    <mat-card>{{event.title}}</mat-card>
+</div>
